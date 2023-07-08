@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Forum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(146, 225, 243);
+        font-size: 12px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 200;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        background-color: rgb(4, 9, 39);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        color: rgb(118, 118, 234);
+        font-size: 1.05rem;
+    }
+    .left {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .container{
+        width: 80%;
+        margin: 50px auto;
+    }
+    .contact-box{
+        background: #fff;
+        display: flex;
+    }
+    .contact-left{
+        flex-basis: 60%;
+        padding: 40px 60px;
+    }
+    .contact-right{
+        flex-basis: 45%;
+        padding: 35px;
+        background: #1c08b5;
+        color: #fff;
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+    .container p{
+        margin-bottom: 40px;
+    }
+
+    .row{
+        display: inline;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .row .input-group{
+        flex-basis: 45%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    input{
+        width: 200px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    
+    button{
+        background: #1c08b5;
+        width: 80px;
+        border: none;
+        outline: none;
+        color: #fff;
+        height: 25px;
+        border-radius: 15px;
+        margin-top: 20px;
+        box-shadow: 0 5px 15px 0 rgba(26, 5, 146, 0.3);
+    }
+    button :hover{
+        background-color: rgb(0, 0, 0);
+    }
+    textarea{
+        width: 100%;
+        border: 1px solid #ccc;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    label{
+        margin-bottom: 1px;
+        display: block;
+        color: #1c08b5;
+    }
+
+    .contact-left h2{
+        color: #1c08b5;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .contact-right h2{
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    table{
+        padding-right: -10px;
+    }
+
+    tr td :first-child{
+        padding-left: 20px;
+    }
+    tr td{
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+</style>
+
+<header>
+    <nav>
+        <div class="left">Sumit's Portfolio</div>
+        <div class="right"></div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Connect with me</h1>
+        <p>Let's Connect and join the force to make a better world</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h2>Send your request</h2>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Mark Hamend">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone</label>
+                        <input type="number" placeholder="+1 101 203 1234">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Markhamend@email.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" placeholder="Text">
+                    </div>
+
+                    
+                    <label for="message">Message</label>
+                    <textarea rows="3" placeholder="Message"></textarea>
+                    
+
+                </div>
+
+                <div class="button">
+                    <button class="submit">SUBMIT</button>
+                </div>
+
+            </div>
+            <div class="contact-right">
+                <h2>Reach Me</h2>
+
+                <table>
+                    <tr>
+                        <td>Email :</td>
+                        <td>auy0jxhq@duck.com</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>Phone Number :</td>
+                        <td>+91-000 000 0000</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>Address :</td>
+                        <td>I will add my address later</td>
+                    </tr>
+                </table>
+        </div>
+        
+        </div>
+    </div>
+    
+</body>
+
+</html>

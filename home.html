@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins', sans-serif;
+    }
+
+    body {
+        background-color: rgb(1, 1, 17);
+        color: #fff;
+        font-family: 'poppins', sans-serif;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        background-color: rgb(4, 9, 39);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        color: rgb(118, 118, 234);
+        font-size: 1.05rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 75px 0;
+    }
+
+    .firstSection>div {
+        width: 30%;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+
+    }
+
+    .rightSection img {
+        width: 95%;
+        margin: 30px 0;
+    }
+
+    .purple {
+        color: rgb(189, 145, 227);
+    }
+
+    #element {
+        color: rgb(189, 145, 227);
+    }
+
+    hr {
+        background: rgb(128, 39, 119);
+        height: 0.1px;
+        margin-bottom: 30px;
+    }
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .secondSection h1 {
+        font-size: 1.9rem;
+        margin-bottom: 50px;
+    }
+
+    .text-gray {
+        color: gray;
+    }
+
+    .secondSection .Box {
+        background: white;
+        width: 75vw;
+        height: 2px;
+        margin: 28px 0;
+        display: flex;
+    }
+
+    .secondSection .vertical {
+        height: 55px;
+        width: 1px;
+        background-color: #fff;
+        margin: 0 10px;
+    }
+
+    .image-top {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: -30px;
+    }
+   
+
+    .vertical-title{
+        position: relative;
+        top: 75px;
+    }
+
+    .verticalText {
+        position: relative;
+        top: 10px;
+    }
+
+    .vertical-desc {
+        position: relative;
+        top: 65px;
+        color: gray;
+        font-size: 12px;
+    }
+</style>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sumit's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, my name is <span class="purple">Sumit</span>
+                <div>and I'am a Developer</div>
+                <div>and I am a passionate</div>
+                <!-- <div> Web Developer</div> -->
+                <span id="element"></span>
+            </div>
+
+            <div class="rightSection">
+                <img src="bg3.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I'am doing</span>
+            <h1>Work Experience</h1>
+            <div class="Box">
+                <div class="vertical"></div>
+                <img class="image-top" src="html.png" alt="/">
+                <div class="verticalText">HTML Developer (2023)</div>
+                <div class="vertical-desc">I am learning HTML for the purpose of Web Development. I love writing code and designing web pages.</div>
+
+                <div class="vertical"></div>
+                <img class="image-top" src="css.jpeg" alt="/">
+                <div class="verticalText">CSS Developer (2023)</div>
+                <div class="vertical-desc">CSS is the next thing I learnt with HTML as it is the design for the web pages. Without it the HTML would be like a plain paper.</div>
+
+                <div class="vertical"></div>
+                <img class="image-top" src="js.png" alt="/">
+                <div class="verticalText">JS Developer (2023)</div>
+                <div class="vertical-desc">JavaScript is the soul of any web page as it makes the web page intractive for the end user.</div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
